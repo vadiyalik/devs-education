@@ -100,6 +100,8 @@ img{
 .site-contact-page {
   display: flex;
 }
+
+/* LEFT PAGE */
 .contact-page-left {
   --text-color:#fff;
   display: flex;
@@ -146,6 +148,78 @@ img{
   background-color: var(--green);
   font-size: 19px;
   align-items: center;
+}
 
+  /* RIGHT PAGE */
+.contact-page-right {
+  width: 100%;
+  min-width: 570px;
+  padding: 55px 60px 40px;
+  margin-left: 12px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.right-page-heading {
+  margin-top: 0;
+  margin-bottom: 65px;
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 600;
+}
+.input-wrap{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+.right-page-input {
+  padding-top: 15px;
+  padding-bottom: 14px;
+  border: 0;
+  border-bottom: 1px solid #555;
+  color: #555;
+}
+.right-page-input:not(:last-child){
+  margin-bottom: 20px;
+}
+.right-page-input:focus{
+  border-color: #000;
+  color: #000;
+  font-weight: 600;
+}
+.right-page-button {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  border: 0;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  background-color: var(--purple);
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+.right-page-notice {
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+}
+.link-color {
+  font-weight: 500;
+  color: var(--red);
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .left-page-top{
+    background-image: url(../img/left-page-bg@2x.jpg);
+  }
 
 }
